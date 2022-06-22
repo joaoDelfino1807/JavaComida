@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Lista de comidas</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+    </head>
+    <body>
+        <h1>Lista de comidas</h1>
+        <button class="btn btn-outline-info" onclick="novo()">Novo</button>
+        <table id="dados" class="table table-hover"></table>
+    
+        <div class="modal" id="cadastro" tabindex="-1">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Cadastro</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label>
+                        Nome:
+                        <input class="form-control" type="text" id="nome"/>
+                    </label>
+                    <label>
+                        Tipo:
+                        <input class="form-control" type="text" id="tipo"/>
+                    </label>
+                    <label>
+                        Peso:
+                        <input class="form-control" type="text" id="peso"/>
+                    </label>
+                    <label>
+                      Kcal:
+                      <input class="form-control" type="text" id="kcal"/>
+                    </label>
+
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Cancelar</button>
+                  <button type="button" class="btn btn-outline-primary" onclick="salvar()">Salvar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./script (1).js"></script>
+</html>
